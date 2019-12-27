@@ -5,6 +5,7 @@
   },
   "private": true,
   "scripts": {
+    "build": "pug --pretty --path . --basedir .",
     "fixpack": "npx fixpack"
   }
 }
