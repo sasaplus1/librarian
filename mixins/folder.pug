@@ -1,0 +1,12 @@
+include ./functions.pug
+
+mixin folder
+  -
+    const name = attributes.name;
+    delete attributes.name;
+    const attrs = spread(attributes);
+    const header = ['H3', ...attrs].join(' ');
+  <DT><!{header}>!{name}</H3>
+  <DL><p>
+    block
+  </DL><p>

@@ -1,0 +1,9 @@
+include ./functions.pug
+
+mixin bookmark
+  -
+    const attrs = spread(attributes);
+    const anchor = ['A', ...attrs].join(' ');
+  <DT><!{anchor}>
+    block
+  </A>

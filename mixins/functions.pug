@@ -1,0 +1,6 @@
+-
+  function spread(attributes) {
+    return Object.entries(attributes).map(function([key, value]) {
+      return [key.toUpperCase(), `"${value}"`].join('=');
+    });
+  }
