@@ -1,0 +1,21 @@
+version: '3.7'
+
+x-base: &base
+  build:
+    context: .
+    dockerfile: Dockerfile
+  image: sasaplus1/librarian
+  init: true
+  volumes:
+    - .:/root
+    # NOTE: ignore node_modules
+    - /root/node_modules
+
+services:
+  build:
+    <<: *base
+  sh:
+    <<: *base
+    entrypoint:
+      - bash
+    tty: true
