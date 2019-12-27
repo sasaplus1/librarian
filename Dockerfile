@@ -8,4 +8,4 @@ COPY . .
 
 RUN yarn install --frozen-lockfile
 
-ENTRYPOINT ["yarn", "run", "--silent", "pug"]
+ENTRYPOINT ["yarn", "build"]
