@@ -1,3 +1,5 @@
 *
+!includes/*.pug
+!mixins/*.pug
 !package.json
 !yarn.lock
